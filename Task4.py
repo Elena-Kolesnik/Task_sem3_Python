@@ -4,6 +4,16 @@
 # - 3 -> 11
 # - 2 -> 10
 
-a = int(input())
-f = bin(a)
-print(f)
+#a = int(input())
+#f = bin(a)
+#print(f)
+
+number = int(input("Введите число: "))
+ 
+number2 = ''
+ 
+while number > 0:
+    number2 = str(number % 2) + number2
+    number = number // 2
+ 
+print(number2)
